@@ -10936,9 +10936,14 @@ a.text-dark:focus {
   Common Style
 ******************/
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #000000;
-  color: #ffffff;
+  background: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
 
