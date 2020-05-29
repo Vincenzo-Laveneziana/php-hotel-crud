@@ -4,17 +4,16 @@
 
   //Head html
   include __DIR__ . '/partials/templates/head.php';
+
+  //Header
+  include __DIR__ . '/partials/templates/header.php';
 ?>
 
 
-<!-- body -->
-<header class="my-4">
-  <div class="container">
-    <h1 class="text-secondary text-center">Hotel Rooms</h1>
-  </div>
-</header>
+<!-- main -->
 
 <main>
+  <h1 class="text-secondary text-center my-4">Hotel Rooms</h1>
   <div class="container d-flex flex-column align-items-center">
     <table class="table col-md-6">
 
