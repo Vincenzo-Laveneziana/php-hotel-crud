@@ -35,10 +35,17 @@
         </tr>
       </tbody>
     </table>
-    <form action="partials/delete/server.php" method="POST">
-      <input type="hidden" name="id" value="<?php echo $room['id']; ?>">
-      <input class="btn btn-danger" type="submit" value="Delete">
-    </form>
+
+    <div class="col-4 d-flex justify-content-between">
+      <form action="partials/delete/server.php" method="POST">
+        <input type="hidden" name="id" value="<?php echo $room['id']; ?>">
+        <input class="btn btn-danger" type="submit" value="Delete">
+      </form>
+
+      <a class="btn btn-primary" 
+      href="<?php echo $base_path; ?>/edit.php?id=<?php echo $room['id']; ?>">Update</a>
+    </div>
+    
   </div>
 </main>
 
