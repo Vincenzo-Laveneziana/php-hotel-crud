@@ -35,8 +35,10 @@
         </tr>
       </tbody>
     </table>
-
-    <a class="text-primary" href="index.php">Ritorna all'archivio</a>
+    <form action="partials/delete/server.php" method="POST">
+      <input type="hidden" name="id" value="<?php echo $room['id']; ?>">
+      <input class="btn btn-danger" type="submit" value="Delete">
+    </form>
   </div>
 </main>
 

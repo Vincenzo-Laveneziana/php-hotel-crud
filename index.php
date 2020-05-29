@@ -48,7 +48,9 @@
                   <td class="text-center" >
                     <a class="text-light btn btn-success" href="./show.php?id=<?php echo $room['id']; ?>">View</a>
                   </td>
-                  <td class="text-center text-primary ">Update</td>
+                  <td class="text-center text-primary ">
+                    <a class="text-light btn btn-primary" href="./edit.php?id=<?php echo $room['id']; ?>">Update</a>
+                  </td>
                   <td class="text-center text-danger">
                     <form action="partials/delete/server.php" method="POST">
                       <input type="hidden" name="id" value="<?php echo $room['id']; ?>">
