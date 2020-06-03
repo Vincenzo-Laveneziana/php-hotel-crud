@@ -21,7 +21,7 @@
 
 
 <!-- Main -->
-<main id="app" class="container mt-5">
+<main class="container mt-5">
   <div class="row">
     <div class="col-12 m-auto">
 
