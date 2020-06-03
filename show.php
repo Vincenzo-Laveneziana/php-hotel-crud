@@ -13,16 +13,15 @@
 <!-- main -->
 
 <main>
-  <h1 class="text-secondary text-center my-4">Hotel Rooms</h1>
+  <h1 class="text-secondary text-center my-4">Details Rooms</h1>
   <div class="container d-flex flex-column align-items-center">
-    <table class="table col-md-6">
-
+    <table class="table col-md-8">
       <thead class="text-center">
         <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Room number</th>
-          <th scope="col">Floor</th>
-          <th scope="col">Beeds</th>
+          <th>ID</th>
+          <th>Room number</th>
+          <th>Floor</th>
+          <th>Beeds</th>
         </tr>
       </thead>
 
@@ -34,6 +33,22 @@
           <td><?php echo $room['beds'] ?></td>
         </tr>
       </tbody>
+    </table>
+
+    <table class="table col-md-8">
+      <thead class="text-center">
+        <tr>
+          <th>Created</th>
+          <th>Update</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr>
+          <td><?php echo $room['created_at'] ?></td>
+          <td><?php echo $room['updated_at'] ?></td>
+        </tr>
+      </tbody>
+
     </table>
 
     <div class="col-4 d-flex justify-content-between">

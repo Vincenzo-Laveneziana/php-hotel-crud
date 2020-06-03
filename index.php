@@ -3,29 +3,29 @@
 
   //Head html
   include __DIR__ . '/partials/templates/head.php';
+
+  //Header
+  include __DIR__ . '/partials/templates/header-index.php';
 ?>
 
 
-<!-- Header -->
-<header class="mb-5 bg-dark">
-  <div class="container">
-    <h1 class="text-primary text-center py-2">Hotel Rooms</h1>
-  </div>
-</header>
 
 <?php //allert 
   if( !empty( $_GET['del'])){ ?>
-    <div class="alert alert-success">
+    <div class="alert alert-success reload">
       Stanza cancellata con successo
     </div>
 
-  <?php } ?>
+  <?php } 
+?>
 
 
 <!-- Main -->
-<main class="container">
+<main id="app" class="container mt-5">
   <div class="row">
-    <div class="col-10 m-auto">
+    <div class="col-12 m-auto">
+
+      
       <table class="table">
         <thead>
           <tr>
@@ -64,6 +64,11 @@
             ?>
         </tbody>
       </table>
+
+      <div class="col-8 m-auto text-center">
+        <a class="text-light btn btn-success m-4 " href=" <?php echo $base_path; ?>create.php">+ Add Room</a>
+      </div>
+
     </div>
   </div>
 </main>

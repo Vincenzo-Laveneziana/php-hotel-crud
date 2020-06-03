@@ -10945,5 +10945,24 @@ a.text-dark:focus {
 body {
   background: #ffffff;
   font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+/****************** 
+  Header
+******************/
+
+/****************** 
+  Main
+******************/
+
+main {
+  flex-grow: 1;
+}
+
+/****************** 
+  Footer
+******************/
 

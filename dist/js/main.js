@@ -93,7 +93,15 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-console.log("js ok");
+$(document).ready(function () {
+  console.log("js -- jquery is ready");
+
+  if ($(".alert").hasClass("reload")) {
+    setTimeout(function () {
+      window.location.replace("http://localhost/php-hotel-crud/");
+    }, 1500);
+  }
+});
 
 /***/ }),
 
@@ -115,8 +123,8 @@ console.log("js ok");
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! H:\MAMP\htdocs\php-hotel-crud\src\js\main.js */"./src/js/main.js");
-module.exports = __webpack_require__(/*! H:\MAMP\htdocs\php-hotel-crud\src\scss\main.scss */"./src/scss/main.scss");
+__webpack_require__(/*! H:\xampp\htdocs\php-hotel-crud\src\js\main.js */"./src/js/main.js");
+module.exports = __webpack_require__(/*! H:\xampp\htdocs\php-hotel-crud\src\scss\main.scss */"./src/scss/main.scss");
 
 
 /***/ })
